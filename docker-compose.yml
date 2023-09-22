@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  app-deb:
+    build:
+      context: .
+      dockerfile: Dockerfile.deb
+    volumes:
+      - ./:/opt/project
+    network_mode: host
+
+  app-alpine:
+    build:
+      context: .
+      dockerfile: Dockerfile.alpine
+    volumes:
+      - ./:/opt/project
+    network_mode: host

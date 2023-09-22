@@ -1,0 +1,11 @@
+FROM python:3.11-bookworm
+
+RUN     pip3 install --upgrade pip \
+    &&  mkdir -p /opt/project
+
+WORKDIR /opt/project
+
+COPY requirements.in ./
+RUN pip3 install -r requirements.in
+
+CMD ["python3", "-m", "pyinstaller_project.main"]
