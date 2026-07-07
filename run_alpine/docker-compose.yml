@@ -1,0 +1,6 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: run_alpine/Dockerfile
+    network_mode: host

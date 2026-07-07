@@ -1,0 +1,6 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: run_scratch/Dockerfile
+    network_mode: host

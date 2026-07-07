@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: build_deb/Dockerfile
+    volumes:
+      - ../:/opt/project
+    network_mode: host

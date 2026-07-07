@@ -1,2 +1,4 @@
 build/
 *.spec
+!build_alpine/*.spec
+!build_deb/*.spec

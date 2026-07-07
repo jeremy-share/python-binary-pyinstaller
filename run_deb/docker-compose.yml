@@ -1,0 +1,6 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: run_deb/Dockerfile
+    network_mode: host
